@@ -1,0 +1,19 @@
+// program untuk menghitung jumlah harga yang dibayarkan setelah dikenai potongan diskon
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int hargaAwal;
+	int diskon;
+
+	cout << "Masukkan harga awal : ";
+	cin >> hargaAwal;
+
+	cout << "Masukkan persentase diskon : ";
+	cin >> diskon;
+
+	int hargaAkhir = hargaAwal - (hargaAwal * diskon / 100);
+
+	cout << "Harga akhir setelah dikenai diskon : " << hargaAkhir;
+}
